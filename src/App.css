@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-size: 16px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif
+}
+
+
+/* header com o navbar*/
+Header {
+  text-align: center;
+  background: linear-gradient(40deg, #191970 0, #f47207);
+  color: white;
+  padding: .7em 1.5em 0.5em;
+}
+
+.hElements{
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.hElements:hover{
+  color: #191970;
+}
+
+/* rodapé */
+footer {
+  margin-top: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #191970;
+  color: white;
+  text-align: center;
+}
+
+footer>*{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.cardContainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1.5%;
+  height: 30%;
+  background: linear-gradient(rgb(222, 171, 235), rgb(199, 201, 169));
+  border-radius: 20px;
+  justify-content: center;  
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.prodPage{
+
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.prodCard{
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(rgb(222, 171, 235), rgb(199, 201, 169));
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.prodCard>*{
+  margin: 20px;
+}
+
+.prodCardImg{
+  width: 25%;
+  height: 25%;
+  border-radius: 20px;
+}
+
+.prodCardInfo>h3{
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.prodCardInfo>div>p{
+  display: inline;
+  margin-right: 20%;
+}
+
+.cardImg{
+  width: 100%;
+  display: flex;
+  justify-content: c;
+  align-items: center;
+}
+
+.cardImg>img{
+  width: 100%;
+  height: 30%;
+}
+
+.card-post {
+  background-color: #2F3644;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* formatando a font do formulario */
+.card-post h1 {
+  font-weight: 800;
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.card-body-post{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  color: black;
+  font-weight: 500;
+  justify-content: center;
+}
+
+.fields{
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.fields>label{
+
+  display: block;
+}
+
+.fields>input,textarea{
+
+  width: 70%;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+
+  font-size: 1.2rem;
+
+  padding-left: 15px;
+}
+
+.fields>input[type = "file"]{
+  height: 40px;
+}
+
+.btn-post {
+  margin-top: 30px;
+  text-align: center;
+
+}
+
+/* formatando as cores e o texto do botão*/
+.btn-post button {
+  font-weight: 800;
+  font-size: 1.3rem;
+
+  padding: 5px 50px;
+  color: #fff;
+  background-color: #3DECB1;
+
+  border: 0;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .cardContainer{
+    
+    flex-direction: row;
+    margin: 3px;
+
+  }
+
+  .card{
+    
+    width: 30%;
+
+  }
+
+  .cardImg>img{
+    width: 100%;
+    height: 300px;
+  }
+}
